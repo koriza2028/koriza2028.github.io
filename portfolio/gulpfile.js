@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 const uglify = require('gulp-uglifyjs');
 
 gulp.task('css', () => {
-    return gulp.src('dev/*.css')
+    return gulp.src('dev/css/*.css')
                 .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
                      cascade: true
                 })
@@ -32,7 +32,7 @@ gulp.task('script', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('dev/*.css', gulp.parallel('css'));
+    gulp.watch('dev/css/*.css', gulp.parallel('css'));
     gulp.watch('dev/*.js', gulp.parallel('script'));
     gulp.watch('./index.html', browserSync.reload);
 })

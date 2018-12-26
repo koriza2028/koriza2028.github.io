@@ -33,7 +33,7 @@ a {
 
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/background.jpg');
+    background-image: url('../../images/background.jpg');
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -174,7 +174,7 @@ a {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/projects.jpg');
+    background-image: url('../../images/projects.jpg');
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
