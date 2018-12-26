@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Ultra">
+          <link href="https://fonts.googleapis.com/css?family=Anton|Ultra" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            
+            <div id="hello">
+                <a href ="#" class="arrows"><span>&#10096;</span></a>
+                <div class="text-content">                    
+                    <h1>hello</h1>
+                    <p>I'm very very stupid</p>
+                </div>
+                <a href="#projects" class="arrows"><span>&#10097;</span></a>
+            </div>
+
+            <div id="projects">
+                <a href="#hello" class="arrows"><span>&#10096;</span></span></a>
+                <div class="grids">
+                    <div>COMING SOON</div>
+                    <div>COMING SOON</div>
+                    <div></div>
+                    <div>COMING SOON</div>
+                    <div></div>
+                    <div><h2>My projects .</h2></div>
+                    <div>COMING SOON</div>
+                    <div>COMING SOON</div>
+                    <div>COMING SOON</div>
+                    <div>COMING SOON</div>
+                </div>
+                <a href="#projects" class="arrows"><span>&#10097;</span></a>
+            </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+    <script src="./dist/js/index.js"></script>
+    <script>$(document).ready(function() {
+            $('a[href^="#"]').click(function () { 
+              elementClick = $(this).attr("href");
+              destination = $(elementClick).offset().left;  
+                $('html').animate( { scrollLeft: destination }, 900 );    
+              return false;
+            });
+          });
+    </script>
+</body>
+</html>
