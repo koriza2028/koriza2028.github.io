@@ -224,14 +224,16 @@ a {
 .grids div:nth-child(6) {
     grid-area: 8 / 5 / 15 / 8;
     background-color: rgb(109, 108, 106);
+    -webkit-box-shadow: 3px 3px rgb(48, 47, 47);
+            box-shadow: 3px 3px rgb(48, 47, 47);
     text-align: left;
 }
 
 .grids div:nth-child(6) h2 {
-    margin-left: 20px;
+    /*margin-left: 5px;*/
     line-height: 1.1;
     letter-spacing: 3px;
-    font-size: 7em;
+    font-size: 7.4vw;
     color: rgb(106, 199, 186);
     text-shadow: 3px 3px 5px black;
     z-index: 1000;
