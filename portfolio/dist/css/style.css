@@ -223,7 +223,7 @@ a {
 
 .grids div:nth-child(6) {
     grid-area: 8 / 5 / 15 / 8;
-    background-color: antiquewhite;
+    background-color: rgb(109, 108, 106);
     text-align: left;
 }
 
@@ -231,7 +231,7 @@ a {
     margin-left: 20px;
     line-height: 1.1;
     letter-spacing: 3px;
-    font-size: 87px;
+    font-size: 7em;
     color: rgb(106, 199, 186);
     text-shadow: 3px 3px 5px black;
     z-index: 1000;
