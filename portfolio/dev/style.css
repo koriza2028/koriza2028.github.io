@@ -17,12 +17,6 @@ a {
     width: 200vw;
 }
 
-.betwen {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(138, 212, 188);
-}
-
 #hello {
     margin: 0;
     display: flex;
