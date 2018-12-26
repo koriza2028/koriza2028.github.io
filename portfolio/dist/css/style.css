@@ -229,7 +229,7 @@ a {
 
 .grids div:nth-child(6) {
     grid-area: 8 / 5 / 15 / 8;
-    background-image: url('/images/projects.jpg');
+    background-color: antiquewhite;
     text-align: left;
 }
 
