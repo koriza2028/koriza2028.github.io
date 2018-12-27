@@ -87,12 +87,12 @@ a {
 }
 
 .showText {
-    animation: showText 6s;
+    animation: showText 3s;
     animation-fill-mode: forwards;
 }
 
 .goingUp {
-    animation: goingUp 3s;
+    animation: goingUp 2s;
     animation-fill-mode: forwards;
 }
 
@@ -133,74 +133,172 @@ a {
     display: grid;
     grid-template-columns: repeat(10, 2fr);
     grid-template-rows: repeat(20, 2fr);
-    grid-gap: 5px;
+    
 }
 
-.grids div {
-    background-color: rgb(152, 201, 216);
+.grids .grid {
+    background-color: rgb(100, 185, 211);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    position: relative;
+}
+
+.grid h3 {
+    position: absolute;
+    opacity: 0;
     color: black;
 }
 
-.grids div:nth-child(1) {
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid:nth-child(2n+1) .image {
+    width: 0;
+    height: 0;
+    transition: 1s;
+    opacity: 0;
+}
+
+.grid:nth-child(2n+1):hover .image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.grid:hover h3 {
+    animation: opacityChange 2.5s ease;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.grid:hover .images h3 {
+    animation: opacityChange 5s;
+    animation-delay: 0.9;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityChange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.grid:nth-child(2n) .image {
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.grid:nth-child(2n):hover .image {
+    height: 0;
+    width: 0;
+}
+
+.grid:nth-child(2n):hover .image h3 {
+    animation: opacityChange 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+.grid:nth-child(1) {
     grid-area: 1 / 1 / 12 / 5;
+}
+
+.grid:nth-child(1) .image {
     background-color: azure;
 }
 
-.grids div:nth-child(2) {
+.grid:nth-child(2) {
     grid-area: 1 / 5 / 8 / 7;
+}
+
+.grid:nth-child(2) .image {
     background-color: aquamarine;
 }
 
-.grids div:nth-child(3) {
+.grid:nth-child(3) {
     grid-area: 1 / 7 / 8 / 8;
-    background-color: blanchedalmond;
 }
 
-.grids div:nth-child(4) {
+.grid:nth-child(3) .image {
+    background-color: antiquewhite
+}
+
+.grid:nth-child(4) {
     grid-area: 1 / 8 / 13 / 11;
-    background-color: rgb(162, 129, 194);
 }
 
-.grids div:nth-child(5) {
-    grid-area: 13 / 8 / 15 / 9;
+.grid:nth-child(4) .image {
     background-color: blanchedalmond;
 }
 
-.grids div:nth-child(6) {
+.grid:nth-child(5) {
+    grid-area: 13 / 8 / 15 / 9;
+}
+
+.grid:nth-child(5) .image {
+    background-color: rgb(179, 235, 146);
+}
+
+.grid:nth-child(6) {
     grid-area: 8 / 5 / 15 / 8;
     background-color: rgb(109, 108, 106);
-    box-shadow: 3px 3px rgb(48, 47, 47);
     text-align: left;
 }
 
-.grids div:nth-child(6) h2 {
+.grid:nth-child(6) h2 {
     line-height: 1.1;
     letter-spacing: 3px;
     font-size: 7.4vw;
     color: rgb(106, 199, 186);
     text-shadow: 3px 3px 5px black;
-    z-index: 1000;
-    position: relative;
+    z-index: 3;
+    position: absolute;
 }
 
-.grids div:nth-child(6) h2::selection {
+.grid:nth-child(6) h2::selection {
     background: transparent;
 }
 
-.grids div:nth-child(7) {
+.grid:nth-child(7) {
     grid-area: 12 / 1 / 21 / 5; 
 }
 
-.grids div:nth-child(8) {
+.grid:nth-child(7) .image {
+    background-color: rgb(143, 247, 122);
+}
+
+.grid:nth-child(8) {
     grid-area: 15 / 5 / 21 / 7;  
 }
 
-.grids div:nth-child(9) {
+.grid:nth-child(8) .image {
+    background-color: blueviolet;
+}
+
+.grid:nth-child(9) {
     grid-area: 15 / 7 / 21 / 9;  
 }
 
-.grids div:nth-child(10) {
+.grid:nth-child(9) .image {
+    background-color: aquamarine;
+}
+
+.grid:nth-child(10) {
     grid-area: 13 / 9 / 21 / 11;  
+}
+
+.grid:nth-child(10) .image {
+    background-color: bisque;
 }
 
 #projects span {
