@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KARINAAAA</title>
     <link rel="stylesheet" href="./dist/css/style.css">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Ultra">
-          <link href="https://fonts.googleapis.com/css?family=Anton|Ultra" rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ultra">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Ultra" rel="stylesheet">
 </head>
 <body>
     <div class="container">
             
             <div id="hello">
-                <a href ="#" class="arrows"><span>&#10096;</span></a>
+                <a href ="#about" class="arrows"><span>&#10096;</span></a>
+
                 <div class="text-content">                    
                     <h1>hello</h1>
                     <p>I'm very very stupid</p>
@@ -22,36 +23,89 @@
                 <a href="#projects" class="arrows"><span>&#10097;</span></a>
             </div>
 
-            <div class="between"></div>
+
 
             <div id="projects">
                 <a href="#hello" class="arrows"><span>&#10096;</span></span></a>
+
                 <div class="grids">
-                    <div class="grid"><div class="image"><h3>COMING SOON</h3></div></div>
-                    <div class="grid"><h3>COMING SOON</h3><div class="image"></div></div>
+
+                    <div class="grid">
+                        <div class="image">
+                            <h3>COMING SOON</h3>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <h3>COMING SOON</h3>
+                        <div class="image"></div>
+                    </div>
+
                     <div class="grid"></div>
-                    <div class="grid"><h3>COMING SOON</h3><div class="image"></div></div>
+
+                    <div class="grid">
+                        <h3>COMING SOON</h3>
+                        <div class="image"></div>
+                    </div>
+
                     <div class="grid"></div>
-                    <div class="grid"><h2>My projects</h2></div>
-                    <div class="grid"><div class="image"><h3>COMING SOON</h3></div></div>
-                    <div class="grid"><h3>COMING SOON</h3><div class="image"></div></div>
-                    <div class="grid"><div class="image"><h3>COMING SOON</h3></div></div>
-                    <div class="grid"><h3>COMING SOON</h3><div class="image"></div></div>
+
+                    <div class="grid">
+                        <h2>My projects</h2>
+                    </div>
+
+                    <div class="grid">
+                        <div class="image">
+                            <h3>COMING SOON</h3>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <h3>COMING SOON</h3>
+                        <div class="image"></div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="image"><h3>COMING SOON</h3></div>
+                    </div>
+
+                    <div class="grid">
+                        <h3>COMING SOON</h3>
+                        <div class="image"></div>
+                    </div>
                 </div>
-                <a href="#projects" class="arrows"><span>&#10097;</span></a>
+
+                <a href="#about" class="arrows"><span>&#10097;</span></a>
+            </div>
+
+
+            <div id="about">
+                <a href ="#projects" class="arrows"><span>&#10096;</span></a>
+
+                <div class="cv">
+                    <div class="karina"></div>
+                    
+                    <h1>About Karina</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga suscipit odio ex tempora atque architecto at porro quo enim consequatur, possimus vitae quos eius, consequuntur quas nesciunt eligendi optio.Ea quibusdam perferendis eum dolore veniam dolorum sit temporibus ullam, perspiciatis ratione ex in suscipit beatae voluptatum accusantium quod adipisci nesciunt veritatis ipsam! Rerum at officia inventore tempora, quibusdam animi!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellat dolores nemo illo asperiores atque libero inventore tempora doloremque sit. Quae et blanditiis facilis. Libero quam commodi enim? Illo, rem.</p>
+                </div>
+                
+                <a href="#hello " class="arrows"><span>&#10097;</span></a>
             </div>
 
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
     <script src="./dist/js/index.js"></script>
-    <script>$(document).ready(function() {
+    <script>
+        $(document).ready(function() {
             $('a[href^="#"]').click(function () { 
-              elementClick = $(this).attr("href");
-              destination = $(elementClick).offset().left;  
+                elementClick = $(this).attr("href");
+                destination = $(elementClick).offset().left;  
                 $('html').animate( { scrollLeft: destination }, 900 );    
-              return false;
+                return false;
             });
-          });
+        });
     </script>
 </body>
 </html>

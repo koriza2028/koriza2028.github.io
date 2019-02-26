@@ -25,7 +25,7 @@ gulp.task('browserSync', () => {
 });
 
 gulp.task('script', () => {
-    return gulp.src('dev/*.js')
+    return gulp.src('dev/js/*.js')
                //.pipe(uglify())
                .pipe(gulp.dest('dist/js'))
                .pipe(browserSync.stream());
@@ -33,7 +33,7 @@ gulp.task('script', () => {
 
 gulp.task('watch', () => {
     gulp.watch('dev/css/*.css', gulp.parallel('css'));
-    gulp.watch('dev/*.js', gulp.parallel('script'));
+    gulp.watch('dev/js/*.js', gulp.parallel('script'));
     gulp.watch('./index.html', browserSync.reload);
 })
 

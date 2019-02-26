@@ -14,14 +14,14 @@ a {
 
 .container {
     display: flex;
-    width: 200vw;
+    width: 300vw;
+    height: 100vh;
 }
 
 #hello {
     margin: 0;
     display: flex;
     justify-content: space-between;
-
     width: 100vw;
     height: 100vh;
     background-image: url('../../images/background.jpg');
@@ -44,7 +44,7 @@ a {
     opacity: 0.5;
 }
 
-#hello span {
+#hello span, #projects span, #about span {
     content: "\2770";
     color: rgb(90, 104, 141);
     text-shadow: 2px 2px rgb(18, 13, 20);
@@ -113,6 +113,9 @@ a {
         margin-top: 170px;
     }
 }
+
+
+
 
 #projects {
     display: flex;
@@ -301,10 +304,47 @@ a {
     background-color: bisque;
 }
 
-#projects span {
-    content: "\2770";
-    color: rgb(235, 177, 250);
-    text-shadow: 2px 2px rgb(156, 16, 211);
-    font-size: 100px;
-    margin-top: 39vh;
+
+
+
+#about {
+    width: 100vw;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv {
+    max-width: 1000px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.karina {
+    width: 70%;
+    height: 280px;
+    margin-top: 20px;
+    background: url('../../images/ich.png');
+    background-repeat: no-repeat;
+    background-position: 50% 18%;
+    background-size: 45%;
+    margin-bottom: 30px;
+    /* border: 1px solid #000; */
+}
+
+.cv h1, .cv p{
+    color: black;
+}
+
+.cv h1 {
+    margin-bottom: 20px;
+}
+
+.cv p {
+    text-align: left;
+    line-height: 26px;
+    margin-bottom: 10px;
 }
