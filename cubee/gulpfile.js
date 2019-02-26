@@ -3,7 +3,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
-const clean = require('gulp-clean-css');
+const clean = require('gulp-clean');
 // const uglify = require('gulp-uglifyjs');
 
 gulp.task('css', () => {
