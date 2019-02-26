@@ -1,0 +1,131 @@
+.left {
+  -webkit-transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+  transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.leftPosition {
+  -webkit-animation: changeLeftPosition 4s;
+  animation: changeLeftPosition 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes changeLeftPosition {
+  0% {
+    -webkit-transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0; }
+  50% {
+    -webkit-transform: rotateY(-90deg) translateZ(25vw) translateX(-25vw);
+    transform: rotateY(-90deg) translateZ(25vw) translateX(-25vw);
+    width: 50vw;
+    height: 50vh;
+    margin-top: 12%;
+    margin-left: 25%; }
+  100% {
+    -webkit-transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0; } }
+
+@keyframes changeLeftPosition {
+  0% {
+    -webkit-transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0; }
+  50% {
+    -webkit-transform: rotateY(-90deg) translateZ(25vw) translateX(-25vw);
+    transform: rotateY(-90deg) translateZ(25vw) translateX(-25vw);
+    width: 50vw;
+    height: 50vh;
+    margin-top: 12%;
+    margin-left: 25%; }
+  100% {
+    -webkit-transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    transform: rotateY(-90deg) translateZ(50vw) translateX(-50vw);
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 0; } }
+
+.top {
+  -webkit-transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+  transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+  background-color: black;
+  height: 100vw;
+  width: 100vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.topPosition {
+  -webkit-animation: changeTopPosition 4s;
+  animation: changeTopPosition 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes changeTopPosition {
+  0% {
+    -webkit-transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    width: 100vw;
+    height: 100vw;
+    margin-top: 0;
+    margin-left: 0; }
+  50% {
+    -webkit-transform: rotateX(90deg) translateZ(25vw) translateY(-25vw);
+    transform: rotateX(90deg) translateZ(25vw) translateY(-25vw);
+    width: 50vw;
+    height: 50vw;
+    margin-top: 12%;
+    margin-left: 25%; }
+  100% {
+    -webkit-transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    width: 100vw;
+    height: 100vw;
+    margin-top: 0;
+    margin-left: 0; } }
+
+@keyframes changeTopPosition {
+  0% {
+    -webkit-transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    width: 100vw;
+    height: 100vw;
+    margin-top: 0;
+    margin-left: 0; }
+  50% {
+    -webkit-transform: rotateX(90deg) translateZ(25vw) translateY(-25vw);
+    transform: rotateX(90deg) translateZ(25vw) translateY(-25vw);
+    width: 50vw;
+    height: 50vw;
+    margin-top: 12%;
+    margin-left: 25%; }
+  100% {
+    -webkit-transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    transform: rotateX(90deg) translateZ(50vw) translateY(-50vw);
+    width: 100vw;
+    height: 100vw;
+    margin-top: 0;
+    margin-left: 0; } }

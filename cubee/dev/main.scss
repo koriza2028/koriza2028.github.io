@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    perspective: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center center -50vw;
+    transform: rotateY(0);
+}
+
+.side {
+    position: absolute;
+    width: inherit;
+    height: 100vh;
+}
+
+.arrows {
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    background: rgb(112, 143, 151);
+    opacity: 0.3;
+}
+
+.arrows:hover {
+    opacity: 0.5;
+}
+
+.leftRotation1 {
+    animation: rotateLeft1 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateLeft1 {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(90deg);
+    }
+}
+
+.leftRotation2 {
+    animation: rotateLeft2 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateLeft2 {
+    from {
+        transform: rotateY(90deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
+.leftRotation3 {
+    animation: rotateLeft3 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateLeft3 {
+    from {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(270deg);
+    }
+}
+
+.leftRotation4 {
+    animation: rotateLeft4 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateLeft4 {
+    from {
+        transform: rotateY(270deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.rightRotation1 {
+    animation: rotateRight1 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateRight1 {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(-90deg);
+    }
+}
+
+.rightRotation2 {
+    animation: rotateRight2 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateRight2 {
+    from {
+        transform: rotateY(-90deg);
+    }
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+
+.rightRotation3 {
+    animation: rotateRight3 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateRight3 {
+    from {
+        transform: rotateY(-180deg);
+    }
+    to {
+        transform: rotateY(-270deg);
+    }
+}
+
+.rightRotation4 {
+    animation: rotateRight4 2s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes rotateRight4 {
+    from {
+        transform: rotateY(-270deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.topArrows {
+    width: 33%;
+    height: 100%;
+    background-color: rgb(204, 29, 29);
+}

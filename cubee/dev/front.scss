@@ -1,0 +1,111 @@
+.hello span, .projects span, .about span {
+    content: "\2770";
+    color: rgb(90, 104, 141);
+    text-shadow: 2px 2px rgb(18, 13, 20);
+    font-size: 700%;
+    margin-top: 425%;
+}
+
+.front {
+    transform: rotateY(0deg); 
+    background-color: aqua;
+}
+
+.hello {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-content {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.text-content h1 {
+    text-transform: uppercase;
+    font-size: 1000%;
+    text-shadow: 3px 3px rgb(78, 76, 76);
+    margin: 20% auto 0 auto;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.text-content h1::selection {
+    background: transparent;
+}
+
+.text-content p::selection {
+    background: transparent;
+}
+
+.text-content p {
+    opacity: 0;
+    margin-top: 0;
+    font-size: 200%;
+    color: rgb(43, 27, 1);
+}
+
+.showText {
+    animation: showText 3s;
+    animation-fill-mode: forwards;
+}
+
+.goingUp {
+    animation: goingUp 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes goingUp {
+    0% {
+        margin-top: 20%;
+    }
+    100% {
+        margin-top: 14%;
+    }
+}
+
+.frontPosition {
+    animation: changeFrontPosition 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeFrontPosition {
+    0% {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 100%;
+    }
+    50% {
+        width: 50%;
+        height: 50vh;
+        margin-top: 12%;
+        margin-left: 25%;
+        font-size: 50%;
+    }
+    100% {
+        width: 100%;
+        height: 100vh;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 100%;
+    }
+}
