@@ -3,6 +3,7 @@ const autoprefixer = require('gulp-autoprefixer');
 // const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
+const clean = require('gulp-clean-css');
 // const uglify = require('gulp-uglifyjs');
 
 gulp.task('css', () => {
@@ -13,6 +14,7 @@ gulp.task('css', () => {
                 )
                 // .pipe(sass())
                 .pipe(concat('all.css'))
+                .pipe(cleanCSS({compatibility: 'ie8'}))
                 .pipe(gulp.dest('dist/css/'))
                 .pipe(browserSync.stream());
 });
