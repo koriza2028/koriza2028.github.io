@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const autoprefixer = require('gulp-autoprefixer');
-const sass = require('gulp-sass');
+// const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const concat = require('gulp-concat');
 // const uglify = require('gulp-uglifyjs');
@@ -11,7 +11,7 @@ gulp.task('css', () => {
                      cascade: true
                 })
                 )
-                .pipe(sass())
+                // .pipe(sass())
                 .pipe(concat('all.css'))
                 .pipe(gulp.dest('dist/css/'))
                 .pipe(browserSync.stream());
