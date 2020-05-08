@@ -10,11 +10,16 @@ public class Helper {
 		
 	}
 
+    public int modulo(int number1, int number2) {
+        int div = number1/number2;
+        return number1-number2*div;
+    }
+
     public String fromDeсToBinaryString(int dec) {
         String binaryString = "";
         int next = dec;
         while (next != 0) {
-            binaryString = (next%2) + binaryString;
+            binaryString = modulo(next,2) + binaryString;
             next = next / 2;
         }
         return binaryString;
@@ -57,7 +62,6 @@ public class Helper {
                     binaryString += fromDeсToBinaryString(decSymbol);
                 }
             }
-            System.out.println(binaryString);
             return binaryString;
         }
     }
@@ -81,5 +85,19 @@ public class Helper {
             } else result += "1";
         }
         return result;
+    }
+
+    public String primFaktor(int number) {
+        String result = "";
+        return prim(number, result);
+    }
+
+    private String prim(int number, String result) {
+        for (int i = 2; i < Math.sqrt(number); i++) {
+            if (modulo(number,i)==0) {
+                return result + i + "*" + prim(number/i, result);
+            }
+        }
+        return "" + number;
     }
 }

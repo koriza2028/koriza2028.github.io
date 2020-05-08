@@ -8,17 +8,17 @@ public class Solution03 extends AbstractSolution {
 
 	/** Aufgabe 3 - Modulo
 	 * Parameter: int[0] Dezimalzahl 1, int[1] Dezimalzahl 2
-	 * Lösung: Zahl 1 MOD Zahl 2
+	 * Lï¿½sung: Zahl 1 MOD Zahl 2
 	 */
 
-	/* Konstruktor - NICHT verändern */
+	/* Konstruktor - NICHT verï¿½ndern */
 	public Solution03(Connection con, TaskObject task) {
 		super(con, task);
 	}
 
 	@Override
 	public String run() {
-		return null;
+		return "" + super.modulo(task.getIntArray(0), task.getIntArray(1));
 	}
 
 }

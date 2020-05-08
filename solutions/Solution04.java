@@ -8,17 +8,17 @@ public class Solution04 extends AbstractSolution {
 
 	/** Aufgabe 4 - Faktorisierung
 	 * Parameter: int[0] Zufallszahl (dezimal)
-	 * Lösung: String Primfaktoren, aufsteigen, getrennt durch * (z.B. 2*2*5*7)
+	 * Lï¿½sung: String Primfaktoren, aufsteigen, getrennt durch * (z.B. 2*2*5*7)
 	 */
 
-	/* Konstruktor - NICHT verändern */
+	/* Konstruktor - NICHT verï¿½ndern */
 	public Solution04(Connection con, TaskObject task) {
 		super(con, task);
 	}
 
 	@Override
 	public String run() {
-		return null;
+		return super.primFaktor(task.getIntArray(0));
 	}
 
 }
