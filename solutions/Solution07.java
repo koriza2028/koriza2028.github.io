@@ -7,18 +7,19 @@ import de.unidue.iem.tdr.nis.client.AbstractSolution;
 public class Solution07 extends AbstractSolution {
 
 	/** Aufgabe 7 - DES R-Block
-	 * Parameter: String[0] Binärstring (64 Bit), int[0] Runde
-	 * Lösung: String R-Block (Binärstring 48 Bit)
+	 * Parameter: String[0] Binï¿½rstring (64 Bit), int[0] Runde
+	 * Lï¿½sung: String R-Block (Binï¿½rstring 48 Bit)
 	 */
 
-	/* Konstruktor - NICHT verändern */
+	/* Konstruktor - NICHT verï¿½ndern */
 	public Solution07(Connection con, TaskObject task) {
 		super(con, task);
 	}
 
 	@Override
 	public String run() {
-		return null;
+		String key = "0000000000000000000000000000000000000000000000000000000000000000";
+		return super.findR(super.task.getStringArray(0), super.task.getIntArray(0), key);
 	}
 
 }

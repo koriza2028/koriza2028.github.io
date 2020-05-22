@@ -7,21 +7,23 @@ import de.unidue.iem.tdr.nis.client.AbstractSolution;
 public class Solution09 extends AbstractSolution {
 
 	/** Aufgabe 9 - DES komplette Runde
-	 * Parameter: String[0] L-Block vorheriger Runde (Binärstring 32 Bit)
-	 * 			  String[1] R-Block vorheriger Runde (Binärstring 32 Bit)
-	 * 			  String[2] Key (Binärstring 64 Bit)
+	 * Parameter: String[0] L-Block vorheriger Runde (Binï¿½rstring 32 Bit)
+	 * 			  String[1] R-Block vorheriger Runde (Binï¿½rstring 32 Bit)
+	 * 			  String[2] Key (Binï¿½rstring 64 Bit)
 	 * 			  int[0] Runde (1-16)
-	 * Lösung: String Binärstring (64 Bit, L-Block + R-Block)
+	 * Lï¿½sung: String Binï¿½rstring (64 Bit, L-Block + R-Block)
 	 */
 
-	/* Konstruktor - NICHT verändern */
+	/* Konstruktor - NICHT verï¿½ndern */
 	public Solution09(Connection con, TaskObject task) {
 		super(con, task);
 	}
 
 	@Override
 	public String run() {
-		return null;
+		return super.roundResult(super.task.getStringArray(0), super.task.getStringArray(1),
+				super.task.getStringArray(2), super.task.getIntArray(0));
 	}
+
 
 }

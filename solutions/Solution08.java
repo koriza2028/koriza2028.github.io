@@ -7,18 +7,21 @@ import de.unidue.iem.tdr.nis.client.AbstractSolution;
 public class Solution08 extends AbstractSolution {
 
 	/** Aufgabe 8 - DES Feistel
-	 * Parameter: String[0] Binärstring (64 Bit), String[1] Rundenschlüssel (Binärstring 48 Bit)
-	 * Lösung: String L-Block XOR R-Block (Binärstring)
+	 * Parameter: String[0] Binï¿½rstring (64 Bit), String[1] Rundenschlï¿½ssel (Binï¿½rstring 48 Bit)
+	 * Lï¿½sung: String L-Block XOR R-Block (Binï¿½rstring)
 	 */
 
-	/* Konstruktor - NICHT verändern */
+	/* Konstruktor - NICHT verï¿½ndern */
 	public Solution08(Connection con, TaskObject task) {
 		super(con, task);
 	}
 
 	@Override
 	public String run() {
-		return null;
+		String L = super.task.getStringArray(0).substring(0, 32);
+		String R = super.task.getStringArray(0).substring(32, 64);
+		String Feistel = super.Feistel(R, super.task.getStringArray(1));
+		return super.XOR(L, Feistel);
 	}
 
 }

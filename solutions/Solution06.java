@@ -6,19 +6,19 @@ import de.unidue.iem.tdr.nis.client.AbstractSolution;
 
 public class Solution06 extends AbstractSolution {
 
-	/** Aufgabe 6 - DES Rundenschlüssel
-	 * Parameter: String[0] Key (Binärstring), int[0] Runde (1-16)
-	 * Lösung: String Rundenschlüssel (Binärstring 48 Bit)
+	/** Aufgabe 6 - DES Rundenschlï¿½ssel
+	 * Parameter: String[0] Key (Binï¿½rstring), int[0] Runde (1-16)
+	 * Lï¿½sung: String Rundenschlï¿½ssel (Binï¿½rstring 48 Bit)
 	 */
 
-	/* Konstruktor - NICHT verändern */
+	/* Konstruktor - NICHT verï¿½ndern */
 	public Solution06(Connection con, TaskObject task) {
 		super(con, task);
 	}
 
 	@Override
 	public String run() {
-		return null;
+		return super.desRoundKey(super.task.getStringArray(0), super.task.getIntArray(0));
 	}
 
 }
